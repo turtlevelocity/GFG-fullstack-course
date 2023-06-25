@@ -1,0 +1,21 @@
+
+/* selector {
+  property: value;
+} */
+
+/* h1 {
+  color: red;
+} */
+
+.header-class {
+  color: red;
+}
+
+.div-class {
+  background-color: aqua;
+  border: 2px solid black;
+}
+/* 
+#heading1 {
+  color: red;
+} */

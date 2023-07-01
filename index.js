@@ -51,9 +51,9 @@
 // console.log("end while loop")
 
 // string
-let name = "1"
+// let name = "1"
 // number
-let number = null
+// let number = null
 // boolean
 // let boolVariable = false
 // console.log(number)
@@ -97,17 +97,17 @@ let number = null
 
 // addNumber(1,2)
 
-const readline = require("readline");
+// const readline = require("readline");
 
-const reader = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout,
-});
+// const reader = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout,
+// });
 
-reader.question("Please enter a value: ", (value) => {
-  console.log(
-    `total count of prime numbers  till ${value}
-    )}`
-  );
-  reader.close();
-});
+// reader.question("Please enter a value: ", (value) => {
+//   console.log(
+//     `total count of prime numbers  till ${value}
+//     )}`
+//   );
+//   reader.close();
+// });

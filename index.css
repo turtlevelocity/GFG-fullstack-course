@@ -1,21 +1,29 @@
-
-/* selector {
-  property: value;
-} */
-
-/* h1 {
-  color: red;
-} */
-
-.header-class {
-  color: red;
+.container {
+  width: 80%;
+  height: 700px;
+  margin: 0 auto;
+  border: 10px solid black;
 }
 
-.div-class {
+.item {
+  width: 150px;
+  height: 150px;
   background-color: aqua;
-  border: 2px solid black;
+  font-weight: 700;
+  padding: 1em;
+  text-align: center;
+  border: 10px solid #05696B;
+  border-radius: 10px;
+
 }
-/* 
-#heading1 {
-  color: red;
-} */
+
+/* --------------------------------------- */
+
+.container {
+  display: flex;
+  flex-direction: row;
+
+}
+.item-3 {
+  flex-grow: 1;
+}

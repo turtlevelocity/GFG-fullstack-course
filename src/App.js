@@ -1,25 +1,40 @@
 import logo from './logo.svg';
 import './App.css';
+import Table from './Table';
+
 
 function App() {
+  const data = [
+    {
+      name: "row1 name",
+      job: "row1 job"
+    },
+    {
+      name: "row2 name",
+      job: "row2 job"
+    },
+    {
+      name: "row3 name",
+      job: "row3 job"
+    },
+    {
+      name: "row4 name",
+      job: "row4 job"
+    },
+    {
+      name: "row5 name",
+      job: "row5 job"
+    },
+    
+  ]
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>My React Application</h1>
+      <Table tableData={data}/>
     </div>
   );
 }
+
 
 export default App;

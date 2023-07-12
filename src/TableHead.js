@@ -1,9 +1,11 @@
-const TableHead = () => {
+const TableHead = (props) => {
+  const {header} = props;
+  // console.log(header);
   return (
     <thead>
       <tr>
-        <th>Name</th>
-        <th>Job</th>
+        <th>{header.col1}</th>
+        <th>{header.col2}</th>
       </tr>
     </thead>
   );

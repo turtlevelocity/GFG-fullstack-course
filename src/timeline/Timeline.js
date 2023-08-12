@@ -64,11 +64,6 @@ const Timeline = () => {
   return (
     <div className='timeline-container'>
       <Navigation />
-      <div>
-        {date.toLocaleTimeString()}
-      </div>
-      <input ref={inputRef} type='text'></input>
-      <button onClick={buttonClickEvent}>Button Ref</button>
       <div className="timeline">
         <Posts posts={postData} user={user}/>
       </div>

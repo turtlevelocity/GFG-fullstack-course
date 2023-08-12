@@ -1,6 +1,16 @@
 import Nav from 'react-bootstrap/Nav';
+import { useNavigate } from 'react-router-dom';
 
 const Navigation = () => {
+
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    localStorage.removeItem('userInfo');
+    navigate('/login');
+  }
+
+
   return (
     <Nav variant="underline">
       <Nav.Item>
@@ -11,6 +21,9 @@ const Navigation = () => {
       </Nav.Item>
       <Nav.Item>
         <Nav.Link >About</Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link onClick={handleLogout}>Logout</Nav.Link>
       </Nav.Item>
     </Nav>
   );

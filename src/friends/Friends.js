@@ -45,6 +45,22 @@ const Friends = () => {
     else return false;
   }
 
+  const handleButtonClick = async (user) => {
+    if(ifUserIsFriend(user)){
+      console.log("unfriend the user");
+    }
+    else{
+      try{
+        const response = await axios.post('http://localhost:3000/friend/sendrequest', 
+        {fromUserId: JSON.parse(localStorage.getItem('userInfo'))._id, toUserId: user._id}, {withCredentials: true});
+        console.log(response);
+      } catch(error) {
+        console.log(error);
+      }
+    }
+
+  }
+
   return (
     <div className='friends-container'>
       <Navigation />
@@ -53,7 +69,9 @@ const Friends = () => {
           <div key={user._id} className='user-card'>
             {/* wrap this span inside a div and you can use flex to not let longer name go outside the div or overlap with the button */}
             <span className='username'>{user.username}</span>
-            <Button className={`friend-button ${ifUserIsFriend(user)? 'remove' : 'add'}`}>
+            <Button 
+            className={`friend-button ${ifUserIsFriend(user)? 'remove' : 'add'}`}
+            onClick={() => handleButtonClick(user)}>
               {ifUserIsFriend(user) ? 'Remove Friends' : 'Add Friend'}
             </Button>
           </div>

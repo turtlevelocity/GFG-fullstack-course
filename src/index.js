@@ -9,6 +9,8 @@ import Timeline from './timeline/Timeline';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Login from './login/Login';
 import PrivateRoute from './PrivateRoute';
+import Friends from './friends/Friends';
+import Home from './home/Home';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -19,6 +21,8 @@ root.render(
         <Route path="/" element={<App />} />
         <Route path="/login" element={<Login />} />
         <Route path="/timeline" element={<PrivateRoute element={Timeline} /> } />
+        <Route path="/friends" element={<PrivateRoute element={Friends}/>} />
+        <Route path='/home' element={<PrivateRoute element={Home}/>}/>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

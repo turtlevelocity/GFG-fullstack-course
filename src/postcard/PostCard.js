@@ -1,5 +1,6 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import "./PostCard.css";
 
 // PostCard will take header(username), body
 const PostCard = (props) => {
@@ -12,12 +13,27 @@ const PostCard = (props) => {
     </Card.Header>
     <Card.Body>
       <Card.Text>
-        {body}
+        {body.post}
       </Card.Text>
-      <Button variant="primary">Like</Button>
+      <div className='postcard-btn-div'>
+        <Button 
+        className="postcard-button" 
+        variant="primary"
+        onClick={() => props.likeButtonHandler(body)}>
+          {body.likes.length} Like
+        </Button>
+
+        <Button 
+        className="postcard-button" 
+        variant='primary'
+        onClick={() => props.dislikeButtonHandler(body)}>
+          {body.dislikes.length} Dislike
+        </Button>
+      </div>
     </Card.Body>
   </Card>
   );
 }
+
 
 export default PostCard;

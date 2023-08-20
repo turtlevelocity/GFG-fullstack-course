@@ -17,10 +17,10 @@ const Navigation = () => {
         <Nav.Link href="/timeline">Timeline</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link href='/'>Friends</Nav.Link>
+        <Nav.Link href='/friends'>Friends</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link >About</Nav.Link>
+        <Nav.Link href='/home'>Home</Nav.Link>
       </Nav.Item>
       <Nav.Item>
         <Nav.Link onClick={handleLogout}>Logout</Nav.Link>

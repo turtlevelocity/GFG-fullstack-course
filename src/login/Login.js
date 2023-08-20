@@ -30,13 +30,13 @@ const Login = () => {
     const userData = {email, password};
     console.log("calling submit method")
 
-    axios.post('http://localhost:3000/auth/login', userData)
+    axios.post('http://localhost:3000/auth/login', userData, {withCredentials: true})
     .then(response => {
       if (response.status === 200) {
         setError(null);
         console.log("login successful");
         console.log(response.data);
-        localStorage.setItem('userInfo', response.data);
+        localStorage.setItem('userInfo', JSON.stringify(response.data));
         navigate('/timeline');
       }
       else {

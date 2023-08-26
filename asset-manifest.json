@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/GFG-fullstack-course/static/css/main.6938d093.css",
-    "main.js": "/GFG-fullstack-course/static/js/main.c0b13b8d.js",
+    "main.js": "/GFG-fullstack-course/static/js/main.abb99d8a.js",
     "index.html": "/GFG-fullstack-course/index.html",
     "main.6938d093.css.map": "/GFG-fullstack-course/static/css/main.6938d093.css.map",
-    "main.c0b13b8d.js.map": "/GFG-fullstack-course/static/js/main.c0b13b8d.js.map"
+    "main.abb99d8a.js.map": "/GFG-fullstack-course/static/js/main.abb99d8a.js.map"
   },
   "entrypoints": [
     "static/css/main.6938d093.css",
-    "static/js/main.c0b13b8d.js"
+    "static/js/main.abb99d8a.js"
   ]
 }
